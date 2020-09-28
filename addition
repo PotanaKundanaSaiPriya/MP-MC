@@ -1,0 +1,46 @@
+//2 8-bit numbers
+
+.model small
+
+.data
+
+a db 7 
+b db 6
+c db ?
+
+.code
+
+mov ax,@data
+mov ds,ax
+
+mov al,a
+add al,b
+mov c,al
+
+mov ah,4ch
+int 21h
+end
+
+//one 8-bit number and one 16-bit number
+
+
+.model small
+
+.data
+
+a dw 54321
+b db 6
+c dw ?
+
+.code
+
+mov ax,@data
+mov ds,ax
+
+mov ax,a
+add al,b
+mov c,ax
+
+mov ax,4ch
+int 21h
+end
