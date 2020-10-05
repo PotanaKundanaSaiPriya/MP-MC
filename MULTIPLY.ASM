@@ -6,8 +6,8 @@ res dw ?
 .code
 mov ax,@data
 mov ds,ax
-mov al,num1
-mul num2
+mov al,a
+mul b
 mov res,ax
 mov ah,4ch
 int 21h
