@@ -1,4 +1,4 @@
-//2 8-bit numbers
+;2 8-bit numbers
 
 .model small
 
@@ -21,7 +21,7 @@ mov ah,4ch
 int 21h
 end
 
-//one 8-bit number and one 16-bit number
+;one 8-bit number and one 16-bit number
 
 
 .model small
