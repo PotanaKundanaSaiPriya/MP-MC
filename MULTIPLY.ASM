@@ -1,7 +1,7 @@
 .model small
 .data
-num1 db 47
-num2 db 15
+a db 2
+b db 3
 res dw ?
 .code
 mov ax,@data
